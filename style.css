@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-font:'Montserrat', sans-serif;
+    --secondary-font:'Playfair Display', serif;
+    --accent-color:#F2994A;
+}
+
+
+body{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: 32px auto;
+    position: relative;
+}
+
+.recipe-thumb{
+    width: 100%;
+}
+.recipe-thumb img{
+    width: 100%;
+}
+.title{
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.subtitle{
+    display: flex;
+    align-items: flex-start;
+    gap:12px;
+    font-size: 12px;
+    margin-bottom: 12px;
+    
+}
+.subtitle p{
+    color: #4F4F4F;
+    font-weight: 500;
+}
+.yelds{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    gap:12px;
+    
+}
+.yelds i{
+    color: var(--accent-color);
+}
+.yeild-meta > span{
+    color: #BDBDBD;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+.yeild-meta p{
+    color: var(--accent-color);
+    font-size: 10px;
+}
+
+.recipie-durations{
+    display: flex;
+   
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
+.dish-time{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.time-meta >p:nth-child(1){
+    color: #BDBDBD;
+    font-weight: bold;
+    font-size: 8px;
+}
+.time-meta >p:nth-child(2){
+    color: #333333;
+    font-size: 10px;
+}
+
+.yeild-container{
+    display: block;
+    justify-content: flex-end;
+    margin-top: 48px;
+}
+.yield-duration-desktop{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding:12px 18px;
+    height:  max-content;
+    display: none;
+    
+    
+}
+.yeid-mobile{
+    margin-bottom: 12px;
+}
+.yeid-mobile{
+    display: flex;
+    align-items: flex-start;
+}
+.recipie-body-wrapper{
+    margin: 32px auto;
+}
+.recipie-body-wrapper > h3{
+    font-family: var(--secondary-font);
+    font-weight: bold;
+font-size: 24px;
+}
+.ingredient-item > h2{
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+}
+.ingredient-item ul{
+    margin-top: 31px;
+}
+.ingredient-item ul li{
+    display: flex;
+    align-items: flex-start;
+    gap:12px;
+}
+
+.ingredients{
+    display: flex;
+    flex-direction: column;
+    gap:42px;
+    align-items: flex-start;
+    margin-top: 12px;
+   
+}
+
+.inustruction{
+    display: flex;
+    gap:12px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+}
+
+.instruction-count{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    font-family: var(--secondary-font);
+    color: #fff;
+    padding: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+}
+@media screen and (min-width:968px){
+    .container{
+        width: 67%;
+        margin: 52px auto;
+    }
+    .title{
+        font-size: 48px;
+    }
+    .subtitle p{
+        font-size: 14px;
+    }
+    .yelds{
+        display: none;
+    }
+    .recipie-durations{
+        display: none;
+    }
+    .yeild-container{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    .yield-duration-desktop{
+        display:block;
+    }
+}
